@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/administracion/farmaco")
 public class FarmacoController {
-
     private FarmacoService farmacoService;
 
     @GetMapping("/frmFarmaco")
