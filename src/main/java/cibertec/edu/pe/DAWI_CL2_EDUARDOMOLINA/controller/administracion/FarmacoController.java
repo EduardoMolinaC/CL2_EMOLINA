@@ -1,4 +1,4 @@
-package cibertec.edu.pe.DAWI_CL2_EDUARDOMOLINA.controller;
+package cibertec.edu.pe.DAWI_CL2_EDUARDOMOLINA.controller.administracion;
 
 import cibertec.edu.pe.DAWI_CL2_EDUARDOMOLINA.service.FarmacoService;
 import lombok.AllArgsConstructor;
@@ -14,7 +14,7 @@ public class FarmacoController {
 
     private FarmacoService farmacoService;
 
-    @GetMapping("/frmFarrmaco")
+    @GetMapping("/frmFarmaco")
     public String frmFarmaco(Model model){
         model.addAttribute("listafarmacos", farmacoService.listarFarmacos());
         return "administracion/frmFarmaco";
